@@ -6,7 +6,7 @@ object Main {
   def main(args: Array[String]): Unit = {
     val n: Int = sc.nextLine.toInt
     val suits = List("S", "H", "C", "D")
-    var mlist = scala.collection.mutable.MutableList.empty[(String, Int)]
+    val mlist = scala.collection.mutable.MutableList.empty[(String, Int)]
     for (i <- 1 to n) {
       val Array(suit, rank) = sc.nextLine.split(' ')
       mlist += suit -> rank.toInt
